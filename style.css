@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+
+}
+marquee{
+    color:snow;
+    text-align: center;
+    font-size: 25px ;
+    position: absolute;
+    top: 30%;
+}
+#title-card-container {
+    position: relative;
+    /* position: absolute; */
+    height: 100%;
+   }
+#game-title{
+    color: gold;
+    /* font-size: 150px; */
+    font-size: 120px;
+   text-align: center;
+   font-family: MedievalSharp;
+}
+
+.mute-button{
+    position:absolute;
+    /* position: relative; */
+    /* top: 69%; */
+    top: 303%;
+    left: 44%;
+    height: 38px;
+    width: 38px;
+}
+#start-button{
+    position:absolute;
+    /* position: relative; */
+    /* top: 68%; */
+    top: 300%;
+    right: 45%;
+    height: 40px;
+    border-color:white;
+    color: gold;
+    text-align: center;
+    font-family: MedievalSharp;
+    background-color: black;
+    border-width: 0.5mm;
+    font-size: 20px;
+}
+#start-button:hover{
+    color:red;
+    border-color:gold;
+    /* transform: scale(1.5); */
+}
+.hide{
+    visibility: hidden;
+    display: none;
+}
+.show{
+    visibility: visible;
+    display: inline-block;
+}
+/* #side_Animation{
+    position: fixed;
+    top: 10%;
+    right: 15%;
+    background: url("C:\Users\7J8020897\Documents\GitHub\Duo-apprentice-project\ottoman.png") no-repeat;
+} */
+
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    /* height: 100px; */
+    /* text-align: center; */
+    overflow: hidden;
+    
+    position: absolute;
+    /* position: relative; */
+    /* top: 30%; */
+    right: 25%;
+
+    top: 100%;
+  }
+  
+  #scroll-text {
+    /* height: 100%; */
+    text-align: center;
+    color: snow;
+    font-size: 25px ;
+    /* position: absolute; */
+    
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
