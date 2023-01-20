@@ -17,7 +17,7 @@ jobs:
       with:
         aws-access-key-id: ${{ AKIAZME6EAAEB7ZYQU6I }}
         aws-secret-access-key: ${{ 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 }}
-        aws-region: ap-southeast-1
+        aws-region: us-east-1
 
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./public/ s3://test8701 --delete
